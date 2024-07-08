@@ -1,0 +1,131 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+# Date created = 15:10:28  May 15, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		VGAt_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEMA5F31C6
+set_global_assignment -name TOP_LEVEL_ENTITY Battleship
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:10:28  MAY 15, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_AF14 -to clk
+set_location_assignment PIN_J14 -to blue[7]
+set_location_assignment PIN_G15 -to blue[6]
+set_location_assignment PIN_F15 -to blue[5]
+set_location_assignment PIN_H14 -to blue[4]
+set_location_assignment PIN_F14 -to blue[3]
+set_location_assignment PIN_H13 -to blue[2]
+set_location_assignment PIN_G13 -to blue[1]
+set_location_assignment PIN_B13 -to blue[0]
+set_location_assignment PIN_E11 -to green[7]
+set_location_assignment PIN_F11 -to green[6]
+set_location_assignment PIN_G12 -to green[5]
+set_location_assignment PIN_G11 -to green[4]
+set_location_assignment PIN_G10 -to green[3]
+set_location_assignment PIN_H12 -to green[2]
+set_location_assignment PIN_J10 -to green[1]
+set_location_assignment PIN_J9 -to green[0]
+set_location_assignment PIN_B11 -to h_sync
+set_location_assignment PIN_F10 -to n_blank
+set_location_assignment PIN_C10 -to n_sync
+set_location_assignment PIN_F13 -to red[7]
+set_location_assignment PIN_E12 -to red[6]
+set_location_assignment PIN_D12 -to red[5]
+set_location_assignment PIN_C12 -to red[4]
+set_location_assignment PIN_B12 -to red[3]
+set_location_assignment PIN_E13 -to red[2]
+set_location_assignment PIN_C13 -to red[1]
+set_location_assignment PIN_A13 -to red[0]
+set_location_assignment PIN_D11 -to v_sync
+set_location_assignment PIN_A11 -to vga_clock
+set_global_assignment -name VERILOG_FILE src/ip/clock/clock_pll/clock_pll_0002.v
+set_global_assignment -name QIP_FILE src/ip/clock/clock_pll/clock_pll_0002.qip
+set_global_assignment -name VHDL_FILE src/ip/clock/clock_pll.vhd
+set_global_assignment -name QIP_FILE src/ip/clock/clock_pll.qip
+set_global_assignment -name SOURCE_FILE src/ip/clock/clock_pll.cmp
+set_global_assignment -name VHDL_FILE VGA.vhd
+set_global_assignment -name VHDL_FILE Battleship.vhd
+set_global_assignment -name VHDL_FILE SQUARE.vhd
+set_location_assignment PIN_AA14 -to KEY[0]
+set_location_assignment PIN_AA15 -to KEY[1]
+set_location_assignment PIN_W15 -to KEY[2]
+set_location_assignment PIN_Y16 -to KEY[3]
+set_location_assignment PIN_AD10 -to SW[0]
+set_global_assignment -name VHDL_FILE Clock_Divider.vhd
+set_global_assignment -name VHDL_FILE SQUARE2.vhd
+set_global_assignment -name VHDL_FILE SQUARE3.vhd
+set_location_assignment PIN_AD11 -to KEY[4]
+set_location_assignment PIN_AD12 -to KEY[5]
+set_location_assignment PIN_AB12 -to KEY[6]
+set_location_assignment PIN_AC12 -to KEY[7]
+set_location_assignment PIN_AF9 -to KEY[8]
+set_location_assignment PIN_AF10 -to KEY[9]
+set_global_assignment -name VHDL_FILE Clock_DividerXL.vhd
+set_location_assignment PIN_AE12 -to rst
+set_global_assignment -name VHDL_FILE hex2led.vhd
+set_location_assignment PIN_AE26 -to ledOut_C[0]
+set_location_assignment PIN_AE27 -to ledOut_C[1]
+set_location_assignment PIN_AE28 -to ledOut_C[2]
+set_location_assignment PIN_AG27 -to ledOut_C[3]
+set_location_assignment PIN_AF28 -to ledOut_C[4]
+set_location_assignment PIN_AG28 -to ledOut_C[5]
+set_location_assignment PIN_AH28 -to ledOut_C[6]
+set_location_assignment PIN_V25 -to ledOut_P[0]
+set_location_assignment PIN_AA28 -to ledOut_P[1]
+set_location_assignment PIN_Y27 -to ledOut_P[2]
+set_location_assignment PIN_AB27 -to ledOut_P[3]
+set_location_assignment PIN_AB26 -to ledOut_P[4]
+set_location_assignment PIN_AA26 -to ledOut_P[5]
+set_location_assignment PIN_AA25 -to ledOut_P[6]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
